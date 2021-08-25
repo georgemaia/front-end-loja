@@ -52,7 +52,8 @@
 	},
 	"login": {
 		"props": {
-			"optionsTitle": "Criar uma conta AWS"
+			"optionsTitle": "Criar uma conta AWS",
+			"iconLabel": "Criar uma conta AWS"
 		}
 	},
 	"header-layout.mobile": {
