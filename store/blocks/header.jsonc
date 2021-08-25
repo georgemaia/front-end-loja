@@ -61,7 +61,7 @@
 
 	"login":{
 		"props":{
-			"iconLabel": "Cira uma conta AWS"
+			"iconLabel": "Logar na AWS"
 		}
 	},
 	"header-layout.mobile": {
@@ -85,8 +85,22 @@
 		}
 	},
 	"drawer": {
-		"children": []
+		"children": [
+			"menu#drawer"
+		]
 	},
+	"menu#drawer": {
+		"children": [
+			"menu-item#produtos",
+			"menu-item#solucoes",
+			"menu-item#definicaoPreco",
+			"menu-item#documentacao",
+			"menu-item#aprenda"
+		],
+		"props": {
+		  "orientation": "vertical"
+		}
+	  },
 	"vtex.menu@2.x:menu#websites": {
 		"children": [
 		  "menu-item#produtos",
