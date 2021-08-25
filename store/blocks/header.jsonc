@@ -32,9 +32,11 @@
 	"flex-layout.col#login": {
 		"props":{
 			"horizontalAlign":"center",
-			"verticalAlign": "middle"
+			"verticalAlign": "middle",
+			"preventVerticalStretch":true,
+			"width":"50%"
 		},
-		"children": ["link#login"]
+		"children": ["login"]
 	},
 	"flex-layout.col#spacer": {
 		"props": {
@@ -55,12 +57,11 @@
 			"width": "50"
 		}
 	},
+	// Login button
 
-	"link#login": {
-		"props": {
-			"label": "Criar uma conta AWS",
-			"href": "#",
-			"blockClass": "login-button"
+	"login":{
+		"props":{
+			"iconLabel": "Cira uma conta AWS"
 		}
 	},
 	"header-layout.mobile": {
