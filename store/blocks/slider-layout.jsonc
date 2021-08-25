@@ -1,0 +1,32 @@
+{
+	"slider-layout#banner": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "desktopOnly",
+			"blockClass": "carousel",
+			"fullWidth": true
+		},
+		"children": ["image#banner1"]
+	},
+	"image#banner1": {
+		"props": {
+			"src": "assets/banner/hero-art-slide.png",
+			"alt": "Trabalho remoto e ensino a distância",
+			"link": "/",
+			"blockClass": "carouselImage",
+			"fullWidth": true
+		}
+	}
+	// "image#offer2": {
+	// 	"props": {
+	// 		"src": "assets/slider/grandes-guerreiros.png",
+	// 		"link": "/",
+	// 		"blockClass": "carouselImage"
+	// 	}
+	// }
+}
