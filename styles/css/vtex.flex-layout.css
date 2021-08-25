@@ -1,3 +1,6 @@
 .flexCol{
     padding-right: 2vw;
 }
+.flexRowContent--main-header-mobile{
+    background: #253241;
+}

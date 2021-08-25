@@ -75,13 +75,28 @@
 			"drawer",
 			"logo",
 			"flex-layout.col#spacer",
-			"login"
+			"flex-layout.col#loginMobile"
 		],
+		
 		"props": {
 			"blockClass": "main-header-mobile",
 			"preventHorizontalStretch": true,
 			"preserveLayoutOnMobile": true,
 			"fullWidth": true
+		}
+	},
+	"flex-layout.col#loginMobile": {
+		"props":{
+			"horizontalAlign":"center",
+			"verticalAlign": "middle",
+			"preventVerticalStretch":true,
+			"width":"50%"
+		},
+		"children": ["login#mobile"]
+	},
+	"login#mobile":{
+		"props":{
+			"iconLabel": "Logar"
 		}
 	},
 	"drawer": {
