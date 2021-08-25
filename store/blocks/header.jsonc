@@ -26,8 +26,15 @@
 			"flex-layout.col#logo-desktop",
 			"vtex.menu@2.x:menu#websites",
 			"flex-layout.col#spacer",
-			"login"
+			"flex-layout.col#login"
 		]
+	},
+	"flex-layout.col#login": {
+		"props":{
+			"horizontalAlign":"center",
+			"verticalAlign": "middle"
+		},
+		"children": ["link#login"]
 	},
 	"flex-layout.col#spacer": {
 		"props": {
@@ -48,10 +55,12 @@
 			"width": "50"
 		}
 	},
-	"login": {
+
+	"link#login": {
 		"props": {
-			"optionsTitle": "Criar uma conta AWS",
-			"iconLabel": "Criar uma conta AWS"
+			"label": "Criar uma conta AWS",
+			"href": "#",
+			"blockClass": "login-button"
 		}
 	},
 	"header-layout.mobile": {
