@@ -8,6 +8,25 @@
     min-height: 3.5vh;
 }
 
+.container--login{
+    display: none;
+}
 .label{
     color: #d5dbdb;
+    padding: 0;
+}
+
+@media screen and (min-width: 1em) {
+    .label{
+        display: block;
+    }
+}
+@media(max-width: 1026px) {
+
+    .label{
+        font-size: 0.700rem;
+    }
+    .container :global(.vtex-button){
+        width: 80%;
+    }
 }

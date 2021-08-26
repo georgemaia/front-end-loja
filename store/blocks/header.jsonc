@@ -97,7 +97,8 @@
 	},
 	"login#mobile":{
 		"props":{
-			"iconLabel": "hpa-profile"
+			"iconLabel": "Entrar",
+			"blockClass":"login"
 		}
 	},
 
