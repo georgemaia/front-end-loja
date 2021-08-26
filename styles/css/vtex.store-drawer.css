@@ -1,3 +1,9 @@
 .drawer{
     background: #253241;
 }
+.drawerContent{
+    border-bottom: #253241;
+}
+.childrenContainer{
+    border-bottom: #253241;
+}

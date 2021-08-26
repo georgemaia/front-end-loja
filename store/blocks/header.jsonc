@@ -99,23 +99,110 @@
 			"iconLabel": "Logar"
 		}
 	},
+
+	// mobile drawer
+
 	"drawer": {
+		"props":{
+			"backdropMode": "default"
+		},
 		"children": [
 			"menu#drawer"
 		]
 	},
 	"menu#drawer": {
 		"children": [
-			"menu-item#produtos",
-			"menu-item#solucoes",
-			"menu-item#definicaoPreco",
-			"menu-item#documentacao",
-			"menu-item#aprenda"
+			"menu-item#produtosMobile",
+			"menu-item#solucoesMobile",
+			"menu-item#definicaoPrecoMobile",
+			"menu-item#documentacaoMobile",
+			"menu-item#aprendaMobile"
 		],
 		"props": {
 		  "orientation": "vertical"
 		}
 	  },
+	// menu mobile
+
+	"menu-item#produtosMobile": {
+		"props": {
+			"id": "menu-item-produtos",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+			"type": "internal",
+			"href": "#",
+			"noFollow": false,
+			"tagTitle": "Produtos",
+			"text": "Produtos"
+			},
+			"iconToTheRight": true
+		}
+	},
+
+	"menu-item#solucoesMobile": {
+		"props": {
+		  "id": "menu-item-solucoes",
+		  "type": "custom",
+		  "highlight": false,
+		  "itemProps": {
+			"type": "internal",
+			"href": "#",
+			"noFollow": false,
+			"tagTitle": "Solucoes",
+			"text": "Soluções"
+		  },
+		  "iconToTheRight": true
+		}
+	  },
+	  "menu-item#definicaoPrecoMobile": {
+		"props": {
+		  "id": "menu-item-definicaoPreco",
+		  "type": "custom",
+		  "highlight": false,
+		  "itemProps": {
+			"type": "internal",
+			"href": "#",
+			"noFollow": false,
+			"tagTitle": "Definicao Preco",
+			"text": "Definição de Preço"
+		  },
+		  "iconToTheRight": true
+		}
+	  },
+	  "menu-item#documentacaoMobile": {
+		"props": {
+		  "id": "menu-item-documentacao",
+		  "type": "custom",
+		  "highlight": false,
+		  "itemProps": {
+			"type": "internal",
+			"href": "#",
+			"noFollow": false,
+			"tagTitle": "Documentacao",
+			"text": "Documentação"
+		  },
+		  "iconToTheRight": true
+		}
+	  },
+	  "menu-item#aprendaMobile": {
+		"props": {
+		  "id": "menu-item-aprenda",
+		  "type": "custom",
+		  "highlight": false,
+		  "itemProps": {
+			"type": "internal",
+			"href": "#",
+			"noFollow": false,
+			"tagTitle": "Aprenda",
+			"text": "Aprenda"
+		  },
+		  "iconToTheRight": true
+		}
+	  },
+
+	// desktop menu
+
 	"vtex.menu@2.x:menu#websites": {
 		"children": [
 		  "menu-item#produtos",
