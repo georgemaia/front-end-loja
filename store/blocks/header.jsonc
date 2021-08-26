@@ -17,7 +17,7 @@
 	"flex-layout.row#desktop": {
 		"props": {
 			"horizontalAlign": "center",
-			"verticalAlign": "center",
+			"verticalAlign": "middle",
 			"preventHorizontalStretch": true,
 			"preventVerticalStretch": true,
 			"fullWidth": true
@@ -34,7 +34,8 @@
 			"horizontalAlign":"center",
 			"verticalAlign": "middle",
 			"preventVerticalStretch":true,
-			"width":"50%"
+			"width":"50%",
+			"blockClass": "login"
 		},
 		"children": ["login"]
 	},
@@ -96,7 +97,7 @@
 	},
 	"login#mobile":{
 		"props":{
-			"iconLabel": "Logar"
+			"iconLabel": "hpa-profile"
 		}
 	},
 
@@ -107,9 +108,17 @@
 			"backdropMode": "default"
 		},
 		"children": [
-			"menu#drawer"
+			"flex-layout.col#drawer"
+			
 		]
 	},
+	"flex-layout.col#drawer":{
+		"children":["menu#drawer"],
+		"props":{
+			"width": "100%"
+		}
+	},
+
 	"menu#drawer": {
 		"children": [
 			"menu-item#produtosMobile",
@@ -119,7 +128,8 @@
 			"menu-item#aprendaMobile"
 		],
 		"props": {
-		  "orientation": "vertical"
+		  "orientation": "vertical",
+		  "blockClass": "drawer"
 		}
 	  },
 	// menu mobile
