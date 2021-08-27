@@ -1,0 +1,11 @@
+/* Title Menu Footer */
+.container--menu {
+	font-size: 1.25rem;
+	color: #d5dbdb;
+}
+
+.container--diversity-text {
+	color: #d5dbdb;
+	font-size: 0.875rem;
+	font-style: italic;
+}

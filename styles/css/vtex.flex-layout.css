@@ -1,6 +1,33 @@
-.flexCol{
-    padding-right: 2vw;
+.flexCol {
+	padding-right: 2vw;
 }
-.flexRowContent--main-header-mobile{
-    background: #253241;
+.flexRowContent--main-header-mobile {
+	background: #253241;
+}
+
+/* Footer */
+.flexRowContent--content-footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+/* @media (min-width: 1280px) {
+	.flexRowContent--content-footer {
+		flex-flow: row wrap;
+	}
+} */
+
+.flexCol--social-network {
+	padding: 25px 0 0 0;
+}
+
+.flexColChild--social-network {
+	padding-bottom: 5px;
+}
+
+.flexColChild--social-network :global(.vtex-login-2-x-container) {
+	width: 100%;
+	margin-bottom: 20px;
 }
