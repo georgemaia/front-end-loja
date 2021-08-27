@@ -17,3 +17,17 @@
 :global(.vtex-store-footer-2-x-footerLayout--container) {
 	background: #242f3e;
 }
+
+/* Solutions info cards */
+.infoCardTextContainer{
+	width: 100%;
+}
+
+@media screen and (min-width: 40em){
+
+	.infoCardTextContainer{
+		min-width: 100%;
+	}
+}
+
+/*  */

@@ -1,0 +1,89 @@
+{   
+    "flex-layout.row#soluitonsUp":{
+        "children":["info-card#1", "info-card#2", "info-card#3"]
+    },
+    "flex-layout.row#soluitonsDown":{
+        "children":["info-card#4", "info-card#5", "info-card#6"]
+    },
+
+    "info-card#1": {
+        "props": {
+          "id": "info-card-example",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "headline": "Hospedagem e aplicativos",
+          "subhead": "Use uma infraestrutura sob demanda e confiável para potencializar seus aplicativos, desde aplicativos internos hospedados a ofertas de SaaS.",
+          "callToActionText": "DISCOVER",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-example",
+          "textAlignment": "left",
+          "TextModeEnum": "rich-text"
+
+          }
+        },
+      "info-card#2": {
+        "props": {
+          "id": "info-card-example",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "headline": "Clearance Sale",
+          "callToActionText": "DISCOVER",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-example",
+          "textAlignment": "left"
+        }
+      },
+      "info-card#3": {
+        "props": {
+          "id": "info-card-example",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "headline": "Clearance Sale",
+          "callToActionText": "DISCOVER",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-example",
+          "textAlignment": "center"
+        }
+      },
+      "info-card#4": {
+        "props": {
+          "id": "info-card-example",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "headline": "Clearance Sale",
+          "callToActionText": "DISCOVER",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-example",
+          "textAlignment": "center"
+        }
+      },
+      "info-card#5": {
+        "props": {
+          "id": "info-card-example",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "headline": "Clearance Sale",
+          "callToActionText": "DISCOVER",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-example",
+          "textAlignment": "center"
+        }
+      },
+      "info-card#6": {
+        "props": {
+          "id": "info-card-example",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "headline": "Clearance Sale",
+          "callToActionText": "DISCOVER",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-example",
+          "textAlignment": "center"
+        }
+      }
+}

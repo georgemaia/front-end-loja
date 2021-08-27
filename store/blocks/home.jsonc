@@ -1,13 +1,13 @@
 {
 	"store.home": {
-		"blocks": ["slider-layout#banner"]
+		"blocks": ["slider-layout#banner", "rich-text#solutions", "flex-layout.row#soluitonsUp", "flex-layout.row#soluitonsDown"]
 	},
-	"rich-text": {
+	"rich-text#solutions": {
 		"props": {
-			"text": "VTEX Store Framework",
+			"text": "Soluções",
 			"textAlignment": "CENTER",
-			"textPosition": "CENTER",
-			"font": "t-heading-1"
+			"textPosition": "left",
+			"font": "t-heading-2"
 		}
 	}
 }
