@@ -1,18 +1,28 @@
 {
 	"header": {
-		"blocks": ["header-layout.desktop", "header-layout.mobile"]
+		"blocks": [
+			"header-layout.desktop",
+			"header-layout.mobile"
+		]
 	},
 	"header.full": {
-		"blocks": ["header-layout.desktop", "header-layout.mobile"]
+		"blocks": [
+			"header-layout.desktop",
+			"header-layout.mobile"
+		]
 	},
 	"header-layout.desktop": {
-		"children": ["sticky-layout#desktop"]
+		"children": [
+			"sticky-layout#desktop"
+		]
 	},
 	"sticky-layout#desktop": {
 		"props": {
 			"blockClass": "sticky-header"
 		},
-		"children": ["flex-layout.row#desktop"]
+		"children": [
+			"flex-layout.row#desktop"
+		]
 	},
 	"flex-layout.row#desktop": {
 		"props": {
@@ -30,14 +40,16 @@
 		]
 	},
 	"flex-layout.col#login": {
-		"props":{
-			"horizontalAlign":"center",
+		"props": {
+			"horizontalAlign": "center",
 			"verticalAlign": "middle",
-			"preventVerticalStretch":true,
-			"width":"50%",
+			"preventVerticalStretch": true,
+			"width": "50%",
 			"blockClass": "login"
 		},
-		"children": ["login"]
+		"children": [
+			"login"
+		]
 	},
 	"flex-layout.col#spacer": {
 		"props": {
@@ -48,7 +60,9 @@
 		"props": {
 			"verticalAlign": "middle"
 		},
-		"children": ["logo"]
+		"children": [
+			"logo"
+		]
 	},
 	"logo": {
 		"props": {
@@ -59,17 +73,20 @@
 		}
 	},
 	// Login button
-
-	"login":{
-		"props":{
+	"login": {
+		"props": {
 			"iconLabel": "Logar na AWS"
 		}
 	},
 	"header-layout.mobile": {
-		"children": ["sticky-layout#mobile"]
+		"children": [
+			"sticky-layout#mobile"
+		]
 	},
 	"sticky-layout#mobile": {
-		"children": ["flex-layout.row#mobile"]
+		"children": [
+			"flex-layout.row#mobile"
+		]
 	},
 	"flex-layout.row#mobile": {
 		"children": [
@@ -78,7 +95,6 @@
 			"flex-layout.col#spacer",
 			"flex-layout.col#loginMobile"
 		],
-		
 		"props": {
 			"blockClass": "main-header-mobile",
 			"preventHorizontalStretch": true,
@@ -87,39 +103,39 @@
 		}
 	},
 	"flex-layout.col#loginMobile": {
-		"props":{
-			"horizontalAlign":"center",
+		"props": {
+			"horizontalAlign": "center",
 			"verticalAlign": "middle",
-			"preventVerticalStretch":true,
-			"width":"50%"
+			"preventVerticalStretch": true,
+			"width": "50%"
 		},
-		"children": ["login#mobile"]
+		"children": [
+			"login#mobile"
+		]
 	},
-	"login#mobile":{
-		"props":{
+	"login#mobile": {
+		"props": {
 			"iconLabel": "Entrar",
-			"blockClass":"login"
+			"blockClass": "login"
 		}
 	},
-
 	// mobile drawer
-
 	"drawer": {
-		"props":{
+		"props": {
 			"backdropMode": "default"
 		},
 		"children": [
 			"flex-layout.col#drawer"
-			
 		]
 	},
-	"flex-layout.col#drawer":{
-		"children":["menu#drawer"],
-		"props":{
+	"flex-layout.col#drawer": {
+		"children": [
+			"menu#drawer"
+		],
+		"props": {
 			"width": "100%"
 		}
 	},
-
 	"menu#drawer": {
 		"children": [
 			"menu-item#produtosMobile",
@@ -129,175 +145,172 @@
 			"menu-item#aprendaMobile"
 		],
 		"props": {
-		  "orientation": "vertical",
-		  "blockClass": "drawer"
+			"orientation": "vertical",
+			"blockClass": "drawer"
 		}
-	  },
+	},
 	// menu mobile
-
 	"menu-item#produtosMobile": {
 		"props": {
 			"id": "menu-item-produtos",
 			"type": "custom",
 			"highlight": false,
 			"itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Produtos",
-			"text": "Produtos"
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Produtos",
+				"text": "Produtos"
 			},
 			"iconToTheRight": true
 		}
 	},
-
 	"menu-item#solucoesMobile": {
 		"props": {
-		  "id": "menu-item-solucoes",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Solucoes",
-			"text": "Soluções"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-solucoes",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Solucoes",
+				"text": "Soluções"
+			},
+			"iconToTheRight": true
 		}
-	  },
-	  "menu-item#definicaoPrecoMobile": {
+	},
+	"menu-item#definicaoPrecoMobile": {
 		"props": {
-		  "id": "menu-item-definicaoPreco",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Definicao Preco",
-			"text": "Definição de Preço"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-definicaoPreco",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Definicao Preco",
+				"text": "Definição de Preço"
+			},
+			"iconToTheRight": true
 		}
-	  },
-	  "menu-item#documentacaoMobile": {
+	},
+	"menu-item#documentacaoMobile": {
 		"props": {
-		  "id": "menu-item-documentacao",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Documentacao",
-			"text": "Documentação"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-documentacao",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Documentacao",
+				"text": "Documentação"
+			},
+			"iconToTheRight": true
 		}
-	  },
-	  "menu-item#aprendaMobile": {
+	},
+	"menu-item#aprendaMobile": {
 		"props": {
-		  "id": "menu-item-aprenda",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Aprenda",
-			"text": "Aprenda"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-aprenda",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Aprenda",
+				"text": "Aprenda"
+			},
+			"iconToTheRight": true
 		}
-	  },
-
+	},
 	// desktop menu
-
 	"vtex.menu@2.x:menu#websites": {
 		"children": [
-		  "menu-item#produtos",
-		  "menu-item#solucoes",
-		  "menu-item#definicaoPreco",
-		  "menu-item#documentacao",
-		  "menu-item#aprenda"
-
+			"menu-item#produtos",
+			"menu-item#solucoes",
+			"menu-item#definicaoPreco",
+			"menu-item#documentacao",
+			"menu-item#aprenda"
 		]
-	  },
-	  "menu-item#produtos": {
+	},
+	"menu-item#produtos": {
 		"props": {
-		  "id": "menu-item-produtos",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Produtos",
-			"text": "Produtos"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-produtos",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Produtos",
+				"text": "Produtos"
+			},
+			"iconToTheRight": true
 		}
-	  },
-	  "menu-item#solucoes": {
+	},
+	"menu-item#solucoes": {
 		"props": {
-		  "id": "menu-item-solucoes",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Solucoes",
-			"text": "Soluções"
-		  },
-		  "iconToTheRight": true
-		}
-	  },
-	  "menu-item#definicaoPreco": {
+			"id": "menu-item-solucoes",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Solucoes",
+				"text": "Soluções"
+			},
+			"iconToTheRight": true
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#solucoes" // Defining a submenu
+		]
+	},
+	"menu-item#definicaoPreco": {
 		"props": {
-		  "id": "menu-item-definicaoPreco",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Definicao Preco",
-			"text": "Definição de Preço"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-definicaoPreco",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Definicao Preco",
+				"text": "Definição de Preço"
+			},
+			"iconToTheRight": true
 		}
-	  },
-	  "menu-item#documentacao": {
+	},
+	"menu-item#documentacao": {
 		"props": {
-		  "id": "menu-item-documentacao",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Documentacao",
-			"text": "Documentação"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-documentacao",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Documentacao",
+				"text": "Documentação"
+			},
+			"iconToTheRight": true
 		}
-	  },
-	  "menu-item#aprenda": {
+	},
+	"menu-item#aprenda": {
 		"props": {
-		  "id": "menu-item-aprenda",
-		  "type": "custom",
-		  "highlight": false,
-		  "itemProps": {
-			"type": "internal",
-			"href": "#",
-			"noFollow": false,
-			"tagTitle": "Aprenda",
-			"text": "Aprenda"
-		  },
-		  "iconToTheRight": true
+			"id": "menu-item-aprenda",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Aprenda",
+				"text": "Aprenda"
+			},
+			"iconToTheRight": true
 		}
-	  }
-
+	}
 }

@@ -1,7 +1,105 @@
 {
 	"store.home": {
-		"blocks": ["slider-layout#banner"]
+		"blocks": [
+			"slider-layout#banner",
+			"__fold__.experimentalLazyAssets",
+			"flex-layout.row#awsm",
+			"flex-layout.row#grid-confira-as-solucoes"
+		]
 	},
+	"flex-layout.row#after-banner-slider": {
+		"children": [
+			"rich-text#confira-as-solucoes"
+		],
+		"props": {
+			"blockClass": [
+				"after-banner-slider"
+			]
+		}
+	},
+	// AWSM - INICIO *************************************=
+	// https://i.ibb.co/Ns1ww2b/awsm.png
+	//https://i.ibb.co/TKG5V1W/awsm2.png
+	"flex-layout.row#awsm": {
+		"children": [
+			"image#awsm"
+		],
+		"props": {
+			"blockClass": [
+				"awsm"
+			]
+		}
+	},
+	"image#awsm": {
+		"props": {
+			"blockClass": [
+				"awsm"
+			],
+			//"maxHeight": 24,
+			"maxHeight": 256,
+			"height": 480,
+			"src": "https://i.ibb.co/TKG5V1W/awsm2.png"
+		}
+	},
+	// AWSM - FIM****************************************
+	//
+	// CONFIRA AS COLUCOES	****************************************
+	// https://i.ibb.co/VpyhxRC/por-setor.png
+	"flex-layout.row#grid-confira-as-solucoes": {
+		"children": [
+			"flex-layout.col#grid-confira-as-solucoes"
+		],
+		"props": {
+			"props": {
+				//"blockClass": "main-header", // vtex.flex-layout.css
+				"horizontalAlign": "right",
+				"verticalAlign": "center",
+				"preventHorizontalStretch": true,
+				"preventVerticalStretch": true,
+				"fullWidth": true
+			},
+			"blockClass": [
+				"grid-confira-as-solucoes"
+			]
+		}
+	},
+	"flex-layout.col#grid-confira-as-solucoes": {
+		"children": [
+			"rich-text#confira-as-solucoes",
+			"flex-layout.row#confira-as-solucoes"
+		],
+		"props": {
+			"blockClass": [
+				""
+			]
+		}
+	},
+	"rich-text#confira-as-solucoes": {
+		"props": {
+			"text": "**Confira as soluções**",
+			"blockClass": "question"
+		}
+	},
+	"flex-layout.row#confira-as-solucoes": {
+		"children": [
+			"image#por-setor"
+		],
+		"props": {
+			"blockClass": [
+				"confira-as-solucoes"
+			]
+		}
+	},
+	"image#por-setor": {
+		"props": {
+			"blockClass": [
+				"por-setor"
+			],
+			//"maxHeight": 24,
+			"src": "https://i.ibb.co/VpyhxRC/por-setor.png"
+		}
+	},
+	// CONFIGURA AS SOLUCOES - FIM ********************************
 	"rich-text": {
 		"props": {
 			"text": "VTEX Store Framework",

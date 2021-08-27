@@ -1,4 +1,69 @@
 {
+    // faZENDO OS SUBMENU DO HEADER
+    "vtex.menu@2.x:submenu#solucoes": {
+        "children": [
+            "vtex.menu@2.x:menu#submenusolucoes"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenusolucoes": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-link"
+        },
+        "children": [
+            "menu-item#category-por-caso-de-uso",
+            "menu-item#category-por-setor",
+            "menu-item#category-por-tipo-de-organizacao"
+        ]
+    },
+    "menu-item#category-por-caso-de-uso": {
+        "props": {
+            "id": "menu-item-category-por-caso-de-uso",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/caso-de-uso/",
+                "noFollow": false,
+                "tagTitle": "caso-de-uso",
+                "text": "Por caso de uso"
+            }
+        }
+    },
+    "menu-item#category-por-setor": {
+        "props": {
+            "id": "menu-item-category-por-setor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/setor/",
+                "noFollow": false,
+                "tagTitle": "setor",
+                "text": "Por setor"
+            }
+        }
+    },
+    "menu-item#category-por-tipo-de-organizacao": {
+        "props": {
+            "id": "menu-item-category-por-tipo-de-organizacao",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/organizacao/",
+                "noFollow": false,
+                "tagTitle": "organizacao",
+                "text": "Por tipo de organização"
+            }
+        }
+    },
+    //
+    //
+    //
     "vtex.menu@2.x:menu#websites2": {
         "props": {
             "experimentalOptimizeRendering": true
