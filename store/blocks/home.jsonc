@@ -1,13 +1,25 @@
 {
 	"store.home": {
-		"blocks": ["slider-layout#banner", "rich-text#solutions", "flex-layout.row#soluitonsUp", "flex-layout.row#soluitonsDown"]
+		"blocks": ["slider-layout#banner", "flex-layout.row#solutions"]
+	},
+
+	"flex-layout.row#solutions":{
+		"children":["flex-layout.col#solutions"]
+	},
+
+	"flex-layout.col#solutions": {
+		"props":{
+			"blockClass":"solucoes"
+		},
+		"children":[ "rich-text#solutions", "flex-layout.row#soluitonsUp", "flex-layout.row#soluitonsDown"]
 	},
 	"rich-text#solutions": {
 		"props": {
-			"text": "Soluções",
+			"text": "### Soluções",
 			"textAlignment": "CENTER",
 			"textPosition": "left",
-			"font": "t-heading-2"
+			"font": "t-heading-2",
+			"blockClass": "solucoes"
 		}
 	}
 }
