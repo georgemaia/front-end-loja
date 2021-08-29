@@ -19,15 +19,51 @@
 }
 
 /* Solutions info cards */
-.infoCardTextContainer{
+.infoCardTextContainer {
 	width: 100%;
 }
 
-@media screen and (min-width: 40em){
-
-	.infoCardTextContainer{
+@media screen and (min-width: 40em) {
+	.infoCardTextContainer {
 		min-width: 100%;
 	}
 }
 
-/*  */
+/* Product Page */
+.productBrand--title {
+	font-weight: bold;
+	color: #fff;
+}
+.productNameContainer--title {
+	margin: 10px 0;
+}
+
+.productDescriptionContainer--description {
+	max-width: 900px;
+	margin-bottom: 20px;
+}
+
+.pointerEventsNone {
+	display: none;
+}
+
+.currencyContainer--price {
+	color: #fff;
+	margin-right: 40px;
+}
+
+.content--description {
+	font-size: 1.1rem;
+	line-height: 23px;
+}
+
+.imageElement--cover {
+	object-fit: cover;
+	max-height: 370px;
+}
+
+@media (min-width: 300px) {
+	.imageElement--cover {
+		min-height: 380px;
+	}
+}

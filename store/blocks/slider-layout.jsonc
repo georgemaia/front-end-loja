@@ -6,10 +6,19 @@
 				"tablet": 1,
 				"phone": 1
 			},
-			"infinite": true,
+			"infinite": false,
 			"showNavigationArrows": "desktopOnly",
 			"blockClass": "carousel",
-			"fullWidth": true
+			"fullWidth": true,
+			"slideTransition": {
+				"speed": 900,
+				"delay": 0,
+				"timing": "900"
+			},
+			"autoplay": {
+				"timeout": 3000,
+				"stopOnHover": true
+			}
 		},
 		"children": [
 			"image#banner1",

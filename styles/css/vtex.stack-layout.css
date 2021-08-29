@@ -1,0 +1,8 @@
+.stackContainer--header {
+	display: flex;
+}
+
+.stackItem {
+	width: 100%;
+	height: 100%;
+}
