@@ -1,7 +1,7 @@
 {   
     "flex-layout.row#categoryUp":{
         "props":{
-          "colGap": 12
+          "colGap": 3
         },
         "children":["link#info1", "link#info2", "link#info3","link#info4"]
     },
@@ -38,6 +38,7 @@
           "id": "info-card-example",
           "isFullModeStyle": false,
           "textPosition": "left",
+          "imageUrl": "assets/category/category01.png",
           "headline": "### Nível gratuito estendido do Amazon Lightsail",
           "subhead": "Novos clientes recebem até três meses gratuitos em servidores privados virtuais selecionados",
           "callToActionText": "Saiba mais",
@@ -52,6 +53,7 @@
           "id": "info-card-example",
           "isFullModeStyle": false,
           "textPosition": "left",
+          "imageUrl": "assets/category/category02.png",
           "headline": "### Evento virtual AWS Storage Day",
           "subhead": "Participe conosco no dia 2 de setembro para conheceer as novidades no portfólio do AWS Storage",
           "callToActionText": "Saiba mais",
@@ -66,6 +68,7 @@
           "id": "info-card-example",
           "isFullModeStyle": false,
           "textPosition": "left",
+          "imageUrl": "assets/category/category03.png",
           "headline": "### Amazon Elasticsearch Service com suporte para armazenamento inativo",
           "subhead": "Retenha dados acessados com pouca frequência e só pague por computação quando precisar",
           "callToActionText": "Saiba mais",
@@ -80,6 +83,7 @@
           "id": "info-card-example",
           "isFullModeStyle": false,
           "textPosition": "left",
+          "imageUrl": "assets/category/category04.png",
           "headline": "### Instâncias EC2 com a tecnologia AMD",
           "subhead":"Os prcessadores EPYC do AMD oferecem um custo até 10% menor do que as instâncias comparáveis",
           "callToActionText": "Saiba mais",
