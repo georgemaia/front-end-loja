@@ -46,6 +46,14 @@
 	height: 100%;
 }
 
+:global(.vtex-store-components-3-x-infoCardContainer){
+	height: 100%;
+}
+
+:global(.vtex-store-components-3-x-infoCardTextContainer){
+	height: 100%;
+}
+
 @media screen and (min-width: 40em){
 
 	.infoCardTextContainer{

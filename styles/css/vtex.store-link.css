@@ -1,4 +1,8 @@
 .link{
     text-decoration: none;
-    padding: auto;
 }
+
+:global(.vtex-store-link-0-x-childrenContainer){
+    height: 100%;
+}
+
