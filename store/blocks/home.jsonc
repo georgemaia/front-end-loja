@@ -20,7 +20,7 @@
 		"props":{
 			"blockClass":"category"
 		},
-		"children":[ "rich-text#category", "flex-layout.row#categoryUp", "flex-layout.row#categoryDown"]
+		"children":[ "rich-text#category", "flex-layout.row#categoryUp"]
 	},
 	"rich-text#solutions": {
 		"props": {
