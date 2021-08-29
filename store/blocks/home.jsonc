@@ -1,10 +1,13 @@
 {
 	"store.home": {
-		"blocks": ["slider-layout#banner", "flex-layout.row#solutions"]
+		"blocks": ["slider-layout#banner", "flex-layout.row#solutions", "flex-layout.row#category"]
 	},
 
 	"flex-layout.row#solutions":{
 		"children":["flex-layout.col#solutions"]
+	},
+	"flex-layout.row#category":{
+		"children":["flex-layout.col#category"]
 	},
 
 	"flex-layout.col#solutions": {
@@ -13,6 +16,12 @@
 		},
 		"children":[ "rich-text#solutions", "flex-layout.row#soluitonsUp", "flex-layout.row#soluitonsDown"]
 	},
+	"flex-layout.col#category": {
+		"props":{
+			"blockClass":"category"
+		},
+		"children":[ "rich-text#category", "flex-layout.row#categoryUp", "flex-layout.row#categoryDown"]
+	},
 	"rich-text#solutions": {
 		"props": {
 			"text": "### Soluções",
@@ -20,6 +29,15 @@
 			"textPosition": "left",
 			"font": "t-heading-2",
 			"blockClass": "solucoes"
+		}
+	},
+	"rich-text#category": {
+		"props": {
+			"text": "### Categorias",
+			"textAlignment": "CENTER",
+			"textPosition": "left",
+			"font": "t-heading-2",
+			"blockClass": "category"
 		}
 	}
 }
